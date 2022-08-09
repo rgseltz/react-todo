@@ -1,9 +1,9 @@
 import React from "react";
 
-const Todo = () => {
+const Todo = ({todo, id, remove}) => {
     return (
         <>
-            
+           <li>{todo}<button onClick={() => remove(id)}>X</button></li>
         </>
     )
 }
